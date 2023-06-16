@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-20 09:22:47 PM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtSVNQOEpJUFQ7MjAyMi0wNS0wNzswNjowMToxOSBQTTsyNjc0"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtSVNQOEpJUFQ7MjAyMi0wNS0wNzswNzowNzo0NCBQTTs0MDtBQ0VSO0xBUFRPUC1JU1A4SklQVDsyMDIyLTA1LTA0OzEwOjI0OjI5IFBNO3R1Z2FzIGtlbG9tcG9rIHVuLmZwcmc7NzgxMA=="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtSVNQOEpJUFQ7MjAyMi0wNS0yMDswOToyMjo0NyBQTTs3OzI3OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai" type="Integer" array="False" size=""/>
+            <declare name="nama, nim, pilihan, matematika, ipa, jawaban, hasil" type="String" array="False" size=""/>
+            <output expression="&quot;SELAMAT DATANG DI PORTAL KUIS BSI&quot;" newline="True"/>
+            <output expression="&quot;NAMA:&quot;" newline="True"/>
+            <input variable="NAMA"/>
+            <output expression="&quot;NIM:&quot;" newline="True"/>
+            <input variable="NIM"/>
+            <output expression="&quot;pilih soal&#13;&#10;MATEMATIKA&#13;&#10;atau&#13;&#10;IPA&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <if expression="pilihan = &quot;MATEMATIKA&quot;">
+                <then>
+                    <output expression="&quot;Hasil dari 5 + [6 : (&#8211;3)] adalah &#8230; .&#13;&#10;A  7 &#13;&#10;B  4 &#13;&#10;C  3 &#13;&#10;D &#8211;3 &quot;" newline="True"/>
+                    <input variable="jawaban"/>
+                    <if expression="jawaban = &quot;C&quot;">
+                        <then>
+                            <assign variable="nilai" expression="20"/>
+                            <output expression="&quot;Suatu barisan aritmetika diketahui U6 = 18 dan U10 = 30. Jumlah 16 suku\n pertama adalah?&#13;&#10;A  360&#13;&#10;B  408&#13;&#10;C 512&#13;&#10;D 896&quot;" newline="True"/>
+                            <input variable="jawaban"/>
+                            <if expression="jawaban = &quot;B&quot;">
+                                <then>
+                                    <assign variable="nilai" expression="40"/>
+                                    <output expression="&quot;Dua suku berikutnya dari pola bilangan 3, 4, 6, 9, &#8230; adalah ?&#13;&#10;A 12,15&#13;&#10;B 12,16&#13;&#10;C 13,17&#13;&#10;D 13,18&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;C&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="60"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="80"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="100"/>
+                                                            <output expression="&quot; NILAI BENAR = 5&#13;&#10;  NILAI SALAH = 0&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="40"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="nilai" expression="20"/>
+                                    <output expression="&quot;Dua suku berikutnya dari pola bilangan 3, 4, 6, 9, &#8230; adalah ?&#13;&#10;A 12,15&#13;&#10;B 12,16&#13;&#10;C 13,17&#13;&#10;D 13,18&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;C&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="40"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="20"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="nilai" expression="0"/>
+                            <output expression="&quot;Suatu barisan aritmetika diketahui U6 = 18 dan U10 = 30. Jumlah 16 suku\n pertama adalah?&#13;&#10;A  360&#13;&#10;B  408&#13;&#10;C 512&#13;&#10;D 896&quot;" newline="True"/>
+                            <input variable="jawaban"/>
+                            <if expression="jawaban = &quot;B&quot;">
+                                <then>
+                                    <assign variable="nilai" expression="20"/>
+                                    <output expression="&quot;Dua suku berikutnya dari pola bilangan 3, 4, 6, 9, &#8230; adalah ?&#13;&#10;A 12,15&#13;&#10;B 12,16&#13;&#10;C 13,17&#13;&#10;D 13,18&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;C&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="40"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="20"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="nilai" expression="0"/>
+                                    <output expression="&quot;Dua suku berikutnya dari pola bilangan 3, 4, 6, 9, &#8230; adalah ?&#13;&#10;A 12,15&#13;&#10;B 12,16&#13;&#10;C 13,17&#13;&#10;D 13,18&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;C&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="20"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="0"/>
+                                            <output expression="&quot;Suatu pekerjaan apabila dilakukan oleh 6 orang dapat diselesaikan dalam\n 6 hari, Apabila pekerja ditambah 3 orang, maka pekerjaan tersebut\n dapat selesai dalam waktu?&#13;&#10;A 2 Hari&#13;&#10;B 3 Hari&#13;&#10;C 4 Hari&#13;&#10;D 5 Hari&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;B&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="0"/>
+                                                    <output expression="&quot;Sebuah toko menjual satu lusin buku dengan harga Rp. 90.000,00. Uang \nyang harus dibayarkan Abdul jika membeli 15 buah buku tersebut adalah?&#13;&#10;A  Rp. 135.500,00&#13;&#10;A  Rp. 125.500,00&#13;&#10;C  Rp. 115.500,00&#13;&#10;D  Rp. 112.500,00&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;D&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="0"/>
+                                                            <output expression="&quot; NILAI BENAR = 0&#13;&#10;  NILAI SALAH = 0&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Sebuah transformator step up menghasilkan beda potensial 200 volt. Transformator tersebut dihubungkan dengan sumber tegangan 100 volt. Jika arus yang mengalir pada kumparan primer 150 mA, maka arus listrik yang mengalir pada kumparan skunder adalah ... .&#10;A.&#9;75 mA        &#9;B. 100 mA&#9;C. 150 mA&#9;D. 300 mA&quot;" newline="True"/>
+                    <input variable="jawaban"/>
+                    <if expression="jawaban = &quot;A&quot;">
+                        <then>
+                            <assign variable="nilai" expression="20"/>
+                            <output expression="&quot;Ketika bayi baru lahir tingginya 50 cm, setelah 1 bulan diukur tingginya di posyandu menjadi 55 cm. Hal ini merupakan ciri makhluk hidup yaitu &#8230; .&#10;A. tumbuh           &#9;&#9;C. berkembang&#10;B.&#9;memerlukan nutrisi&#9;D. berkembang biak&quot;" newline="True"/>
+                            <input variable="jawaban"/>
+                            <if expression="jawaban = &quot;A&quot;">
+                                <then>
+                                    <assign variable="nilai" expression="40"/>
+                                    <output expression="&quot;Sel tumbuhan lebih kuat dan lebih kaku dibandingkan sel hewan, bagian organel sel yang membedakan adalah &#8230; .&#13;&#10;&#10;A.dinding sel&#13;&#10;B. membrane sel&#9;&#13;&#10;C. kloroplas&#13;&#10;D. mitokondria&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;A&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="60"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="80"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="100"/>
+                                                            <output expression="&quot; NILAI BENAR = 5&#13;&#10;  NILAI SALAH = 0&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="40"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="nilai" expression="20"/>
+                                    <output expression="&quot;Sel tumbuhan lebih kuat dan lebih kaku dibandingkan sel hewan, bagian organel sel yang membedakan adalah &#8230; .&#13;&#10;&#10;A.dinding sel&#13;&#10;B. membrane sel&#9;&#13;&#10;C. kloroplas&#13;&#10;D. mitokondria&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;A&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="40"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="20"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="nilai" expression="0"/>
+                            <output expression="&quot;Ketika bayi baru lahir tingginya 50 cm, setelah 1 bulan diukur tingginya di posyandu menjadi 55 cm. Hal ini merupakan ciri makhluk hidup yaitu &#8230; .&#10;A. tumbuh           &#9;&#9;C. berkembang&#10;B.&#9;memerlukan nutrisi&#9;D. berkembang biak&quot;" newline="True"/>
+                            <input variable="jawaban"/>
+                            <if expression="jawaban = &quot;A&quot;">
+                                <then>
+                                    <assign variable="nilai" expression="20"/>
+                                    <output expression="&quot;Sel tumbuhan lebih kuat dan lebih kaku dibandingkan sel hewan, bagian organel sel yang membedakan adalah &#8230; .&#13;&#10;&#10;A.dinding sel&#13;&#10;B. membrane sel&#9;&#13;&#10;C. kloroplas&#13;&#10;D. mitokondria&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;A&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="40"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="60"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="80"/>
+                                                            <output expression="&quot; NILAI BENAR = 4&#13;&#10;  NILAI SALAH = 1&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="20"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <assign variable="nilai" expression="0"/>
+                                    <output expression="&quot;Sel tumbuhan lebih kuat dan lebih kaku dibandingkan sel hewan, bagian organel sel yang membedakan adalah &#8230; .&#13;&#10;&#10;A.dinding sel&#13;&#10;B. membrane sel&#9;&#13;&#10;C. kloroplas&#13;&#10;D. mitokondria&quot;" newline="True"/>
+                                    <input variable="jawaban"/>
+                                    <if expression="jawaban = &quot;A&quot;">
+                                        <then>
+                                            <assign variable="nilai" expression="20"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="40"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="60"/>
+                                                            <output expression="&quot; NILAI BENAR = 3&#13;&#10;  NILAI SALAH = 2&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3 &quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilai" expression="0"/>
+                                            <output expression="&quot;Kebiasaan membawa beban yang terlalu berat dibagian punggung sehingga tubuh membungkuk. Kebiasaan tersebut dapat mengakibatkan kelainan tulang yang disebut &#8230;&#13;&#10;&#10;A. skoliosis&#13;&#10;B. rakitis&#13;&#10;C. kifosis&#13;&#10;D. lordosis&quot;" newline="True"/>
+                                            <input variable="jawaban"/>
+                                            <if expression="jawaban = &quot;C&quot;">
+                                                <then>
+                                                    <assign variable="nilai" expression="20"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="40"/>
+                                                            <output expression="&quot; NILAI BENAR = 2&#13;&#10;  NILAI SALAH = 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <assign variable="nilai" expression="0"/>
+                                                    <output expression="&quot;Sebuah benda bergerak di atas lantai. Kecepatan benda tersebut semakin lama semakin kecil dan akhirnya berhenti. Gaya yang menyebabkan gerak benda tersebut semakin melambat adalah &#8230; .&#13;&#10;&#10;A. gaya dorong&#13;&#10;B. gaya gesekan&#13;&#10;C. gaya tarik&#13;&#10;D. gaya berat&quot;" newline="True"/>
+                                                    <input variable="jawaban"/>
+                                                    <if expression="jawaban = &quot;B&quot;">
+                                                        <then>
+                                                            <assign variable="nilai" expression="20"/>
+                                                            <output expression="&quot; NILAI BENAR = 1&#13;&#10;  NILAI SALAH = 4&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="nilai" expression="0"/>
+                                                            <output expression="&quot; NILAI BENAR = 0&#13;&#10;  NILAI SALAH = 5&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="nilai" newline="True"/>
+            <if expression="nilai &gt;= 60">
+                <then>
+                    <assign variable="hasil" expression="&quot;lulus&quot;"/>
+                </then>
+                <else>
+                    <assign variable="hasil" expression="&quot;tidaklulus&quot;"/>
+                </else>
+            </if>
+            <output expression="hasil" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
