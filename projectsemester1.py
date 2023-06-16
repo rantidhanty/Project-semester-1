@@ -47,4 +47,42 @@ class matematika ():
         self.pilihan1_3 = tk.Button(window, text=kunci_mtk[0][2], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p2)
         self.pilihan1_3.place(y=350, x=20)
         self.pilihan1_4 = tk.Button(window, text=kunci_mtk[0][3], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p22)
-        self.pilihan1_4.place(y=400, x=20) 
+        self.pilihan1_4.place(y=400, x=20)
+        #Fungsi p2 akan menambahkan poin (Count) menjadi 1 dan akan langsung menjalankan fungsi ke soal selanjutnya
+    def p2 (self):
+        global count
+        self.count+=1
+        self.p22()
+#Fungsi soal selanjutnya (2)
+
+    def p22 (self):
+# perintah destroy adalah untuk menghancurkan perintah sebelumnya.
+#Jika tidak menuliskan perintah destroy maka soal sebelumnya tidak akan hilang dan akan menjadi bertempelan (duplikat)
+        self.soal_mtk1.destroy()
+        self.pilihan1_1.destroy()
+        self.pilihan1_2.destroy()
+        self.pilihan1_3.destroy()
+        self.pilihan1_4.destroy()
+        self.soal_mtk2 = tk.Label(window, text=soal_mtk[1], font=('arial',30))
+        self.soal_mtk2.place(y=70)
+        self.pilihan2_1 = tk.Button(window, text=kunci_mtk[1][0], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p33)
+        self.pilihan2_1.place(y=250, x=20)
+        self.pilihan2_2 = tk.Button(window, text=kunci_mtk[1][1], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p3)
+        self.pilihan2_2.place(y=300, x=20)
+        self.pilihan2_3 = tk.Button(window, text=kunci_mtk[1][2], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p33)
+        self.pilihan2_3.place(y=350, x=20)
+        self.pilihan2_4 = tk.Button(window, text=kunci_mtk[1][3], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p33)
+        self.pilihan2_4.place(y=400, x=20)
+    def p3 (self):
+        global count
+        self.count+=1
+        self.p33()
+    def p33 (self):
+        self.soal_mtk2.destroy()
+        self.pilihan2_1.destroy()
+        self.pilihan2_2.destroy()
+        self.pilihan2_3.destroy()
+        self.pilihan2_4.destroy()
+        self.soal_mtk3 = tk.Label(window, text=soal_mtk[2], font=('arial', 30))
+        self.soal_mtk3.place(y=70)
+        self.pilihan3_1 = tk.Button(window, text=kunci_mtk[2][0], font=('arial', 15, 'bold'), bg="blue",
