@@ -28,3 +28,23 @@ class matematika ():
         self.p1()
         global count
         self.count = 0
+        # p1 adalah pertanyaan 1 dan selanjutnya
+    def p1 (self) :
+#Menampilkan judul
+        self.judul = tk.Label(window, text="Kuis",width=43, bg="green", fg="white", font=("ariel", 40, "bold"))
+        self.judul.place(x=0, y=2)
+#Menampilkan soal pertama
+        self.soal_mtk1=tk.Label(window, text=soal_mtk[0], font=('arial', 30))
+        self.soal_mtk1.place(y=70)
+#Menampilkan Pilihan (A,B,C,D)
+#Command salah satu pilihan berbeda, yang berbeda itulah jawaban yang benar
+#Jika memilih (A,B,D) maka akan langsung ke fungsi p22
+#Jika memilih C makan akan ke fungsi p2
+        self.pilihan1_1 = tk.Button(window, text=kunci_mtk[0][0], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p22)
+        self.pilihan1_1.place(y=250, x=20)
+        self.pilihan1_2 = tk.Button(window, text=kunci_mtk[0][1], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p22)
+        self.pilihan1_2.place(y=300, x=20)
+        self.pilihan1_3 = tk.Button(window, text=kunci_mtk[0][2], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p2)
+        self.pilihan1_3.place(y=350, x=20)
+        self.pilihan1_4 = tk.Button(window, text=kunci_mtk[0][3], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p22)
+        self.pilihan1_4.place(y=400, x=20)
