@@ -86,3 +86,64 @@ class matematika ():
         self.soal_mtk3 = tk.Label(window, text=soal_mtk[2], font=('arial', 30))
         self.soal_mtk3.place(y=70)
         self.pilihan3_1 = tk.Button(window, text=kunci_mtk[2][0], font=('arial', 15, 'bold'), bg="blue",
+                                    fg="white", command=self.p44)
+        self.pilihan3_1.place(y=250, x=20)
+        self.pilihan3_2 = tk.Button(window, text=kunci_mtk[2][1], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p44)
+        self.pilihan3_2.place(y=300, x=20)
+        self.pilihan3_3 = tk.Button(window, text=kunci_mtk[2][2], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p4)
+        self.pilihan3_3.place(y=350, x=20)
+        self.pilihan3_4 = tk.Button(window, text=kunci_mtk[2][3], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p44)
+        self.pilihan3_4.place(y=400, x=20)
+    def p4 (self):
+        global count
+        self.count+=1
+        self.p44()
+    def p44 (self):
+        self.soal_mtk3.destroy()
+        self.pilihan3_1.destroy()
+        self.pilihan3_2.destroy()
+        self.pilihan3_3.destroy()
+        self.pilihan3_4.destroy()
+        self.soal_mtk4 = tk.Label(window, text=soal_mtk[3], font=('arial', 30))
+        self.soal_mtk4.place(y=70)
+        self.pilihan4_1 = tk.Button(window, text=kunci_mtk[3][0], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p55)
+        self.pilihan4_1.place(y=250, x=20)
+        self.pilihan4_2 = tk.Button(window, text=kunci_mtk[3][1], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p5)
+        self.pilihan4_2.place(y=300, x=20)
+        self.pilihan4_3 = tk.Button(window, text=kunci_mtk[3][2], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p55)
+        self.pilihan4_3.place(y=350, x=20)
+        self.pilihan4_4 = tk.Button(window, text=kunci_mtk[3][3], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.p55)
+        self.pilihan4_4.place(y=400, x=20)
+    def p5 (self):
+        global count
+        self.count+=1
+        self.p55()
+    def p55 (self):
+        self.soal_mtk4.destroy()
+        self.pilihan4_1.destroy()
+        self.pilihan4_2.destroy()
+        self.pilihan4_3.destroy()
+        self.pilihan4_4.destroy()
+        self.soal_mtk5 = tk.Label(window, text=soal_mtk[4], font=('arial', 30))
+        self.soal_mtk5.place(y=70)
+        self.pilihan5_1 = tk.Button(window, text=kunci_mtk[4][0], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.hasil1)
+        self.pilihan5_1.place(y=250, x=20)
+        self.pilihan5_2 = tk.Button(window, text=kunci_mtk[4][1], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.hasil1)
+        self.pilihan5_2.place(y=300, x=20)
+        self.pilihan5_3 = tk.Button(window, text=kunci_mtk[4][2], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.hasil1)
+        self.pilihan5_3.place(y=350, x=20)
+        self.pilihan5_4 = tk.Button(window, text=kunci_mtk[4][3], font=('arial', 15, 'bold'), bg="blue", fg="white", command=self.poin)
+        self.pilihan5_4.place(y=400, x=20)
+    def poin (self):
+        global count
+        self.count+=1
+        self.hasil1()
+    def hasil1 (self):
+        self.judul.destroy()
+        self.soal_mtk5.destroy()
+        self.pilihan5_1.destroy()
+        self.pilihan5_2.destroy()
+        self.pilihan5_3.destroy()
+        self.pilihan5_4.destroy()
+        global count
+        self.kkm = 60
