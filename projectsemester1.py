@@ -47,4 +47,4 @@ class matematika ():
         self.pilihan1_3 = tk.Button(window, text=kunci_mtk[0][2], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p2)
         self.pilihan1_3.place(y=350, x=20)
         self.pilihan1_4 = tk.Button(window, text=kunci_mtk[0][3], font=('arial', 15, 'bold'),bg="blue", fg="white",command=self.p22)
-        self.pilihan1_4.place(y=400, x=20)
+        self.pilihan1_4.place(y=400, x=20) 
